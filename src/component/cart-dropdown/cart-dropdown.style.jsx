@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+import {
+    BaseButton,
+    GoogleSignInButton,
+    InvertedButton,
+  } from '../Button/button.style'
+
 
 export const CartDropdownContainer = styled.div`
 position: absolute;
@@ -13,6 +19,12 @@ background-color: white;
 top: 90px;
 right: 40px;
 z-index: 5;
+
+${BaseButton},
+${GoogleSignInButton},
+${InvertedButton} {
+  margin-top: auto;
+}
 `;
 
 export const CartItems = styled.div`

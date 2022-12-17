@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom'
 
 import { CartContext } from '../context/cart.context'
 
-import { Button } from '../Button/button.style'
+import  Button  from '../Button/button.component'
 
 import './cart-dropdown.style.jsx'
 import { CartDropdownContainer,
          CartItems,
-         EmptyMessage } from './cart-dropdown.style.jsx'
+         EmptyMessage } from './cart-dropdown.style'
 
 import CartItem from '../cart-item/cart-item.component'
 

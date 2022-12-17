@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useContext, useEffect, useState, Fragment } from 'react'
 
-import './category.style.scss'
+import { CategoryContainer,CategoryTitle } from './category.style'
 
 import ProductCard from '../../component/product-card/product-card.component'
 import { CategoriesContext } from '../../component/context/Categories.context'
@@ -17,12 +17,12 @@ const Category =() =>{
     }, [category, categoriesMap])
     return(
         <Fragment>
-            <h2 className='category-title'>{category.toUpperCase()}</h2>
-        <div className='category-container'>
+            <CategoryTitle>{category.toUpperCase()}</CategoryTitle>
+        <CategoryContainer>
         {products &&
             products.map((product) => <ProductCard key={product.id} product={product} />)
         }
-    </div>
+    </CategoryContainer>
         </Fragment>
 )
 }
