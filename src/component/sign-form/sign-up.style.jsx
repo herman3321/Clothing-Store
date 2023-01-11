@@ -13,6 +13,7 @@ width: 380px;
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 `;
 
 

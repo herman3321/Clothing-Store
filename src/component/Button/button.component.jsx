@@ -17,7 +17,7 @@ import {
       [BUTTON_TYPE_CLASSES.inverted]: InvertedButton,
     }[buttonType]);
   
-  const Button = ({ children, buttonType = false, ...otherProps }) => {
+  const Button = ({ children, buttonType, ...otherProps }) => {
     const CustomButton = getButton(buttonType)
     return <CustomButton {...otherProps}>{children}</CustomButton>
 }   
