@@ -19,11 +19,11 @@ const CheckoutItem = ({cartItem}) => {
     const dispatch = useDispatch()
 
 
-    const clearItemHandler = () => 
+const clearItemHandler = () => 
     dispatch(clearItemFromCart(cartItems, cartItem))
-    const removeItemHandler = () => 
+const removeItemHandler = () => 
     dispatch(removeItemToCart(cartItems, cartItem))
-    const addItemHandler = () => 
+const addItemHandler = () => 
     dispatch(addItemToCart(cartItems, cartItem))
 
     return(
