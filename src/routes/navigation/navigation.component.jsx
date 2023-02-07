@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 import { useSelector, useDispatch  } from "react-redux";
 
@@ -9,7 +9,6 @@ import { selectIsCartOpen } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { signOutStart } from "../../store/user/user.action";
 
-import { signOutUser } from "../../utils/firebase/firebase.utils";
 import { ReactComponent as DmLogo} from '../../assets/crown.svg'
 
 import { NavigationContainer,
