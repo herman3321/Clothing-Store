@@ -23,6 +23,7 @@ export const BaseButton = styled.button`
     color: black;
     border: 1px solid black;
   }
+  align-items: center;
 `;
 
 export const GoogleSignInButton = styled(BaseButton)`
